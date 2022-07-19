@@ -497,7 +497,7 @@ p {
   margin-right: auto;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .feature__ul {
     gap: 30px;
     text-align: center;
@@ -505,7 +505,40 @@ p {
   .feature__ul .attention__li::before {
     background-image: url(../image/antenna.svg);
     content: "";
-    background: #F5F4FA;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    padding: 25px 190px;
+    display: block;
+    width: 100%;
+    height: 120px;
+    background-repeat: no-repeat;
+  }
+  .feature__ul .punctuality__li::before {
+    background-image: url(../image/clock.svg);
+    content: "";
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    padding: 25px 190px;
+    display: block;
+    width: 100%;
+    height: 120px;
+    background-repeat: no-repeat;
+  }
+  .feature__ul .planning__li::before {
+    background-image: url(../image/diagram.svg);
+    content: "";
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    padding: 25px 190px;
+    display: block;
+    width: 100%;
+    height: 120px;
+    background-repeat: no-repeat;
+  }
+  .feature__ul .technology__li::before {
+    background-image: url(../image/astronaut.svg);
+    content: "";
+    background-color: #F5F4FA;
     border-radius: 4px;
     padding: 25px 190px;
     display: block;
