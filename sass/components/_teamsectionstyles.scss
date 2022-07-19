@@ -7,6 +7,29 @@
 }
 
 .team__title {
+    @media screen and (min-width: 480px) {
+        
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.18;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #212121;
+    }
+     @media screen and (min-width: 480px) {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.18;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #212121;
+     }
+    
+    @media screen and (min-width: 1200) {
     margin-top: 0;
     margin-bottom: 50px;
     color: $title-text;
@@ -14,6 +37,8 @@
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+    }
+   
 
 }
 
