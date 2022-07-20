@@ -1,15 +1,100 @@
 .section-footer {
     background-color: #2F303A;
-    margin-right: auto;
     color: var(--primary-text-color);
     padding-top: 60px;
     padding-bottom: 60px;
-    display: flex;
-
 }
 
 .conteiner-footer {
     display: flex;
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        display: block;
+        
+        text-align: center;
+        & .conteiner-footer__primary {
+            text-align: center;
+            margin-right: 0;
+            margin-bottom: 60px;
+        }
+        & .conteiner-footer__second {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 60px;
+            
+        }
+        & .footer__title {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        & .form-footer__conteiner {
+            width: 450px;
+            margin-left: 0;
+            justify-content: center;
+        }
+        & .form-footer__input {
+            width: 450px;
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+        & .form-footer__email {
+            display: block;
+        }
+        & .form-footer__text {
+            top: 0;
+        }
+        & .form-footer__button {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: flex;
+        flex-wrap: wrap;
+        & .conteiner-footer__primary {
+            
+            text-align: center;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 60px;
+        }
+        & .conteiner-footer__second {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 60px;
+            
+        }
+        & .footer__title {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        & .form-footer__conteiner {
+            width: 450px;
+            margin-left: auto;
+            margin-right: auto;
+            justify-content: center;
+        }
+        & .form-footer__input {
+            width: 450px;
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+        & .form-footer__email {
+            display: block;
+        }
+        & .form-footer__title {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        & .form-footer__text {
+            top: 0;
+        }
+        & .form-footer__button {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+    }
 }
 
 
