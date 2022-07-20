@@ -814,27 +814,43 @@ p {
           justify-content: center;
 }
 
-.clients__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 391px;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  color: #212121;
-  margin-bottom: 0;
-  margin-top: 0;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0;
-  -webkit-margin-before: 0;
-          margin-block-start: 0;
-  -webkit-margin-after: 0;
-          margin-block-end: 0;
+@media screen and (min-width: 480px) {
+  .clients__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    width: 314px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    width: 391px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    -webkit-margin-before: 0;
+            margin-block-start: 0;
+    -webkit-margin-after: 0;
+            margin-block-end: 0;
+  }
 }
 
 .clients__ul {
@@ -848,10 +864,39 @@ p {
   text-align: center;
   color: #AFB1B8;
   margin-top: 50px;
+  gap: 30px;
 }
 
-.clients__li + .clients__li {
-  margin-left: 30px;
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .clients__ul {
+    margin-top: 0;
+    width: 450px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .clients__ul .clients__li {
+    width: 210px;
+    margin-top: 0;
+  }
+  .clients__ul .clients__link {
+    width: 210px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients__ul {
+    margin-top: 0;
+    width: 768px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .clients__ul .clients__li {
+    width: 226px;
+    margin-top: 0;
+  }
+  .clients__ul .clients__link {
+    width: 226px;
+  }
 }
 
 .clients__link {
