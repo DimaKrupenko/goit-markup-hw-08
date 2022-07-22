@@ -1,19 +1,27 @@
 .portfolio__filter {
     display: flex;
-    margin-top: 0;
-    margin-bottom: 50px;
-    width: 594px;
-    margin-left: auto;
-    margin-right: auto;
+        margin-bottom: 50px;
+        gap: 8px;
+    @media screen and (min-width: 480px) {
+        width: 362px;
+        flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 611px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+        
+    @media screen and (min-width: 1200px) {
+        width: 594px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
 }
 
-.filter__li {
-    display: flex;
-    margin-top: 0;
-    +.filter__li {
-            margin-left: 8px;
-        }
-}
+
 
 
 
@@ -44,22 +52,63 @@
 
 
 
-
-
-
 .portfolio__main {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 0;
-    margin-top: 0;
-    padding-left: 0;
-    & :nth-child(n+7) {
-            margin-bottom: 0px;
+    
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+       
+        & .portfolio__card {
+            width: 450px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        & .portfolio-image {
+            width: 100%;
+            height: 294px;
+        }
+        & .card-conteiner__overley {
+            height: 294px;
+        }
+        & .card-conteiner__hover {
+            width: 100%;
+            height: 100%;
+            margin-bottom: 0;
+        }
+        & .hover__text {
+            padding: 77px 24px;
+        }
+        
+    }
+
+    @media screen and (min-width: 768px) {
+        
+        & .portfolio__card {
+            width: 354px;
+            margin-right: 30px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        & .portfolio-image {
+            width: 100%;
         }
 
-    & :nth-child(3n) {
-        margin-right: 0;
     }
+    
+    @media screen and (min-width: 1200px) {
+        
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-left: 0;
+        & :nth-child(n+7) {
+                margin-bottom: 0px;
+            }
+
+        & :nth-child(3n) {
+            margin-right: 0;
+    }
+    }
+    
 }
 
 
@@ -95,7 +144,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 369px;
+    width: 100%;
     margin: 0;
     background: rgba(33, 150, 243, 0.9);
     transform: translateY(100%);
@@ -122,17 +171,17 @@
 }
 
 .card-image__conteiner {
-    margin-left: 24px;
-    margin-right: 24px;
+    padding-left: 24px;
+    
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 322px;
+    width: 100%;
     display: inline-block;
 
 }
 
 .card__title {
-    width: 322px;
+    width: 100%;
     color: $title-text;
     font-weight: 700;
     font-size: 18px;
@@ -148,7 +197,7 @@
 }
 
 .website__text {
-    width: 322px;
+    width: 100%;
     color: $primary-text;
     font-weight: 400;
     font-size: 16px;
