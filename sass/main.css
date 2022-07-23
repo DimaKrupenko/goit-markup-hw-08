@@ -74,25 +74,85 @@ p {
   border-bottom: 1px solid #ECECEC;
 }
 
-.container-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (min-width: 480px) {
+  .container-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
-.logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #2196F3;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+  }
 }
 
 .header-logo {
@@ -101,13 +161,31 @@ p {
   padding-left: 0;
 }
 
-.navigation__ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-left: 93px;
-  margin-bottom: 0;
-  margin-top: 0;
+@media screen and (min-width: 480px) {
+  .navigation__ul {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navigation__ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navigation__ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 93px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
 }
 
 .navigation__list + .navigation__list {
@@ -132,14 +210,41 @@ p {
   color: #2196F3;
 }
 
-.contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
-  margin-bottom: 0;
-  padding-left: 0;
-  margin-top: 0;
+@media screen and (min-width: 480px) {
+  .contacts {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts {
+    display: block;
+  }
+  .contacts .contacts__li {
+    margin-left: 0;
+  }
+  .contacts .contacts__li + .contacts__li {
+    padding-top: 10px;
+  }
+  .contacts .contacts__link {
+    padding: 0;
+    width: 123px;
+  }
+  .contacts .contacts__image {
+    margin-right: 8px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    margin-bottom: 0;
+    padding-left: 0;
+    margin-top: 0;
+  }
 }
 
 .contacts__li {
@@ -168,6 +273,33 @@ p {
 .contacts__image {
   margin-right: 10px;
   fill: currentColor;
+}
+
+@media screen and (min-width: 480px) {
+  .button-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  .button-header .button-header__image:hover {
+    fill: #2196F3;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .button-header {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .button-header {
+    display: none;
+  }
 }
 
 .current {
