@@ -36,11 +36,33 @@
                     </a>
                 </li>
             </ul>
-            <button class="button-header">
+            <button class="button-header" type="button" data-moenu-open>
                 <svg class="button-header__image"  width="40" height="40">
                     <use href="./image/symbol-defs.svg#icon-menu" ></use>
                 </svg>
             </button>
+        </div>
+        <div class="mobile-menu__backdrop" data-menu>
+            <div class="mobile-menu__conteiner">
+                <button type="button" class="menu-closed" data-menu-close>
+                    <svg class="menu-closed__image">
+                        <use href="./image/symbol-defs.svg#icon-close"></use>
+                    </svg>
+                </button> 
+                <ul class="menu-navigation">
+                    <li class="menu-navigation__list"><a class="menu-navigation__link current" href="index.html">Студия</a></li>
+                    <li class="menu-navigation__list"><a class="menu-navigation__link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="menu-navigation__list"><a class="menu-navigation__link" href="index.html">Контакты</a></li>
+                </ul>
+                <ul class="menu-contacts">
+                    <li class="menu-contacts__li">
+                        <a class="menu-contacts__link tel" href="tel:+380961111111">+38 096 111 11 11</a>
+                    </li>
+                    <li class="menu-contacts__li">
+                        <a class="menu-contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
         
@@ -261,5 +283,6 @@
         </div>
     </footer>
 <script src="./js/modal.js"></script>
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>
