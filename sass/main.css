@@ -314,12 +314,6 @@ p {
 
 @media screen and (min-width: 768px) {
   .current::after {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .current::after {
     content: "";
     background-image: url(../image/hover.svg);
     margin-top: 28px;

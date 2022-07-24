@@ -214,11 +214,9 @@
         display: none;
     }
 
-    @media screen and (min-width: 768px) {
-        display: none;
-    }
+    
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
         content: "";
         background-image: url(../image/hover.svg);
         margin-top: 28px;
