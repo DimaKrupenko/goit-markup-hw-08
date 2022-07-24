@@ -1,12 +1,12 @@
 .mobile-menu__backdrop {
-    position: fixed;
-    width: 100%;
+    position: relative;
+    
     height: 100%;
     z-index: 3;
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.1);
-    border: 1px solid #0000001A;
+    
     transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1),
         visibilitty 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -24,8 +24,8 @@
 .mobile-menu__conteiner {
     
     position: absolute;
-    top: 0;
-    
+    top: -62px;
+    right: -1px;
     width: 480px;
     height: 796px;
     padding: 48px 40px;
