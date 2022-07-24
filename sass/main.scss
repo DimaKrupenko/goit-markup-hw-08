@@ -5,7 +5,6 @@
 // секции с основной страницы
 @import './components/hederstyles';
 @import './components/herostyles';
-@import './components/modalherostyles';
 @import './components/featuresectionstyles';
 @import './components/activittiessectionstyles';
 @import './components/teamsectionstyles';
@@ -13,4 +12,6 @@
 @import './components/footerstyles';
 // секция портфолио
 @import './components/portfoliosectionstyles';
-
+// модальное окно и мобайл меню
+@import './components/modalherostyles';
+@import './components/mobilemenustyles'

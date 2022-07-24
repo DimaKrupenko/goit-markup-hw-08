@@ -1,0 +1,130 @@
+.mobile-menu__backdrop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid #0000001A;
+    transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibilitty 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &.is-hidden {
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    &.mobile-menu__conteiner {
+        transform: translate(-50%, -50%) scale(1.1, 1)
+    }
+}
+
+.mobile-menu__conteiner {
+
+    position: absolute;
+    top: 0;
+
+    width: 480px;
+    height: 100%;
+    padding: 48px 40px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+}
+
+.menu-closed {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+
+    &:hover {
+        fill: $accent-color;
+    }
+}
+
+.menu-navigation {
+    display: block;
+
+}
+
+.menu-navigation__list+.menu-navigation__list {
+    margin-top: 32px;
+}
+
+.menu-navigation__link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: $title-text;
+}
+
+.current {
+    color: $accent-color;
+}
+
+.menu-contacts {
+    margin-top: 302px;
+}
+
+.menu-contacts__li+.menu-contacts__li {
+    padding-top: 32px;
+}
+
+.menu-contacts__link {
+    display: inline-block;
+    color: $primary-text;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+}
+
+.tel {
+
+    color: $accent-color;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+}
+
+.social-networks__header {
+    display: flex;
+    margin-top: 64px;
+}
+
+.social-networks__li {
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+
+}
+
+.social-networks__link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: $accent-color;
+}
