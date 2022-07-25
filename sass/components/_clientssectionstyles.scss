@@ -5,7 +5,7 @@
 }
 
 .clients__title {
-   @media screen and (min-width: 480px) {
+   
        font-family: 'Roboto';
         font-style: normal;
         font-weight: 700;
@@ -18,7 +18,7 @@
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 30px;
-   }
+   
    
     @media screen and (min-width: 1200px) {
         width: 391px;
@@ -42,24 +42,18 @@
 
 .clients__ul {
     display: flex;
-    width: 1170px;
+   width: 450px;
     justify-content: center;
     text-align: center;
     color: #AFB1B8;
-    margin-top: 50px;
-    gap: 30px;
-    @media screen and (min-width: 480px) and (max-width: 767px) {
-        margin-top: 0;
+    
+        gap: 30px;
+    
+        
         width: 450px;
         flex-wrap: wrap;
-        & .clients__li {
-            width: 210px;
-            margin-top: 0;
-        }
-        & .clients__link {
-            width: 210px;
-        }
-    }
+       
+    
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         
@@ -75,6 +69,19 @@
                 width: 226px;
             }
     }
+    @media screen and (min-width: 1200px) {
+        width: 1170px;
+        margin-top: 50px;
+        
+        & .clients__li {
+                width: 170px;
+                margin-top: 0;
+            }
+        
+            & .clients__link {
+                width: 170px;
+            }
+    }
 }
 
 
@@ -83,7 +90,7 @@
 .clients__link {
     display: flex;
     fill: #AFB1B8;
-    width: 170px;
+    width: 210px;
     height: 92px;
     align-items: center;
     justify-content: center;

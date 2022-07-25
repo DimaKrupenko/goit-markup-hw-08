@@ -6,11 +6,11 @@
 }
 
 .container-header {
-    @media screen and (min-width: 480px) {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+        
     
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         display: flex;
@@ -26,7 +26,7 @@
 }
 
 .logo {
-    @media screen and (min-width: 480px) {
+    
         padding-top: 16px;
         padding-bottom: 16px;
         font-family: 'Raleway';
@@ -36,7 +36,7 @@
         line-height: 1.16;
         letter-spacing: 0.03em;
         color: #2196F3;
-    }
+    
 
     @media screen and (min-width: 768px) {
         padding-top: 26px;
@@ -72,9 +72,9 @@
 }
 
 .navigation__ul {
-    @media screen and (min-width: 480px){
+   
         display: none;
-    }
+    
     
     @media screen and (min-width: 768px) {
         display: flex;
@@ -117,9 +117,9 @@
 
 
 .contacts {
-    @media screen and (min-width: 480px) {
+    
         display: none;
-    }
+    
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         display: block;
@@ -185,7 +185,7 @@
 
 
 .button-header {
-    @media screen and (min-width: 480px) {
+    
         display: flex;
         background-color: #ffffff;
         border: none;
@@ -193,7 +193,7 @@
         padding: 0;
         & .button-header__image:hover {
             fill: $accent-color;
-        }
+        
     }
 
     @media screen and (min-width: 768px){
@@ -212,9 +212,9 @@
 }
 
 .current::after {
-    @media screen and (min-width: 480px) {
+   
         display: none;
-    }
+    
 
     
 

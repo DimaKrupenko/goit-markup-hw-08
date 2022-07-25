@@ -25,7 +25,7 @@
 
 
 .conteiner-modal {
-    @media screen and (min-width: 480px) {
+    
         position: absolute;
         top: 50%;
         left: 50%;
@@ -35,7 +35,7 @@
         background-color: #FFFFFF;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 4px;
-    }
+    
 
         @media screen and (min-width: 768px) {
             position: absolute;
@@ -98,7 +98,7 @@
 }
 
 .modal__title {
-    @media screen and (min-width: 480px) {
+    
             font-family: 'Roboto';
             font-style: normal;
             font-weight: 700;
@@ -115,7 +115,7 @@
             margin-left: auto;
             margin-right: auto;
 
-        }
+        
     
     @media screen and (min-width: 1200px) {
         font-family: 'Roboto';
@@ -139,7 +139,7 @@
 }
 
 .container__input {
-    @media screen and (min-width: 480px) {
+    
         width: 370px;
             margin-left: auto;
             margin-right: auto;
@@ -147,7 +147,7 @@
             +.container__input {
                 margin-top: 10px;
             }
-        }
+        
     
 
     @media screen and (min-width: 1200px) {
@@ -254,14 +254,14 @@
 }
 
 .checkbox__label {
-    @media screen and (min-width: 480px) {
+    
     display: flex;
     margin-left: auto;
     margin-right: auto;
     align-items: center;
     height: 15px;
     width: 370px;
-    }
+    
 
     @media screen and (min-width: 1200px) {
     display: flex;
@@ -287,7 +287,7 @@
 }
 
 .checkbox__text {
-    @media screen and (min-width: 480px) {
+   
         display: inline-block;
         font-family: 'Roboto';
         font-style: normal;
@@ -297,7 +297,7 @@
         letter-spacing: 0.03em;
         color: #757575;
         margin-left: 8px;
-    }
+    
     
     @media screen and (min-width: 1200px) {
     display: inline-block;

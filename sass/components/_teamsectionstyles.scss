@@ -7,7 +7,7 @@
 }
 
 .team__title {
-    @media screen and (min-width: 480px) {
+    
         
         font-family: 'Roboto';
         font-style: normal;
@@ -18,7 +18,7 @@
         letter-spacing: 0.03em;
         color: #212121;
         margin-bottom: 30px;
-    }
+    
      
     
     @media screen and (min-width: 1200) {
@@ -37,7 +37,7 @@
 .team__ul {
     display: flex;
     gap: 30px;
-    @media screen and (min-width: 480px) {
+   
         flex-wrap: wrap;
         & .team__list {
             width: 450px;
@@ -48,7 +48,7 @@
         & .team__job {
             width: 450px;
         }
-    }
+    
 
     @media screen and (min-width: 768px) {
         flex-wrap: wrap;
