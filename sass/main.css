@@ -934,6 +934,12 @@ p {
     display: -ms-flexbox;
     display: flex;
   }
+  .conteiner-footer .form-footer__input {
+    width: 358px;
+  }
+  .conteiner-footer .form-footer__conteiner {
+    width: 450px;
+  }
 }
 
 .conteiner-footer__primary {
@@ -1402,7 +1408,7 @@ p {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   height: 609px;
-  width: 450px;
+  width: 100%;
   background-color: #FFFFFF;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1423,6 +1429,9 @@ p {
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
   }
+  .conteiner-modal .container__input {
+    width: 370px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1437,6 +1446,9 @@ p {
     -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+  }
+  .conteiner-modal .container__input {
+    width: 448px;
   }
 }
 
@@ -1480,7 +1492,7 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  width: 370px;
+  width: 100%;
   height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1489,6 +1501,12 @@ p {
   margin-bottom: 12px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .modal__title {
+    width: 370px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1516,7 +1534,7 @@ p {
 }
 
 .container__input {
-  width: 370px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1765,7 +1783,7 @@ p {
   position: absolute;
   top: -62px;
   right: -1px;
-  width: 480px;
+  width: 100%;
   height: 796px;
   padding: 48px 40px;
   background-color: #FFFFFF;
@@ -1857,12 +1875,15 @@ p {
   display: -ms-flexbox;
   display: flex;
   margin-top: 64px;
+  margin-right: auto;
+  width: 100%;
 }
 
 .social-networks__li {
   padding-right: 10px;
   margin-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
+  width: 100%;
 }
 
 .social-networks__link {
