@@ -1684,7 +1684,13 @@ p {
       -ms-flex-align: center;
           align-items: center;
   height: 15px;
-  width: 370px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .checkbox__label {
+    width: 370px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1856,7 +1862,7 @@ p {
 }
 
 .menu-navigation {
-  display: block;
+  margin-bottom: auto;
 }
 
 .menu-navigation__list + .menu-navigation__list {
@@ -1878,7 +1884,7 @@ p {
 }
 
 .menu-contacts {
-  margin-top: 50px;
+  margin-bottom: 64px;
 }
 
 .menu-contacts__li + .menu-contacts__li {
@@ -1910,7 +1916,6 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 64px;
   margin-right: auto;
   width: 100%;
   gap: 10px;

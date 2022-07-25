@@ -270,8 +270,10 @@
     margin-right: auto;
     align-items: center;
     height: 15px;
-    width: 370px;
+    width: 100%;
     
+    @media screen and (min-width: 768px){
+    width: 370px;}
 
     @media screen and (min-width: 1200px) {
     display: flex;
