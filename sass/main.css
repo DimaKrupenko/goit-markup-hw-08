@@ -1311,9 +1311,6 @@ p {
   .portfolio__main .portfolio__card:last-child {
     margin-bottom: 0;
   }
-  .portfolio__main .portfolio-image {
-    width: 100%;
-  }
 }
 
 @media screen and (min-width: 1200px) {
