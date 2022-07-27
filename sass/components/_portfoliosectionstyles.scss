@@ -89,7 +89,7 @@
             width: 354px;
             gap: 30px;
             margin-left: 0;
-            margin-right: 0;
+            
             
             
         }
@@ -115,7 +115,12 @@
 
         & :nth-child(3n) {
             margin-right: 0;
-    }
+        }
+        & .portfolio__card {
+            width: 370px;
+            margin-left: 0;
+            margin-right: 0;
+                 }
     }
     
 }
