@@ -1,6 +1,10 @@
 .section-clients {
     display: flex;
     justify-content: center;
+    @media screen and (max-width: 1200px) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
 
 }
 

@@ -1,6 +1,13 @@
+.portfolio-section {
+    @media screen and (max-width: 1200px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
 .portfolio__filter {
     display: flex;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
         gap: 8px;
    
         width: 362px;
@@ -11,12 +18,14 @@
         width: 611px;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 30px;
     }
         
     @media screen and (min-width: 1200px) {
         width: 594px;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 50px;
     }
     
 }
@@ -109,6 +118,8 @@
         margin-bottom: 0;
         margin-top: 0;
         padding-left: 0;
+        
+       
         & :nth-child(n+7) {
                 margin-bottom: 0px;
             }
@@ -119,8 +130,8 @@
         & .portfolio__card {
             width: 370px;
             margin-left: 0;
-            margin-right: 0;
-                 }
+            
+            }
     }
     
 }

@@ -54,7 +54,9 @@
         margin-top: 0;
         gap: 30px;
         width: 1170px;
-        
+        & .feature__li:last-child {
+                margin-bottom: 30px;
+            }
        
         }
     

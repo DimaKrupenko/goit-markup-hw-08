@@ -3,6 +3,10 @@
     justify-content: center;
     margin-top: 0;
     background: #F5F4FA;
+    @media screen and (max-width: 1200px) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
 
 }
 
@@ -21,10 +25,12 @@
     
      
     
-    @media screen and (min-width: 1200) {
+    @media screen and (min-width: 1200px) {
     margin-top: 0;
     margin-bottom: 50px;
     color: $title-text;
+    font-family: 'Roboto';
+    font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
