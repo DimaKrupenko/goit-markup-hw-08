@@ -22,7 +22,7 @@
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 30px;
-   
+        margin-top: 0;
    
     @media screen and (min-width: 1200px) {
         width: 391px;
@@ -47,7 +47,7 @@
 .clients__ul {
     display: flex;
    width: 450px;
-    justify-content: center;
+    
     text-align: center;
     color: #AFB1B8;
         gap: 30px;

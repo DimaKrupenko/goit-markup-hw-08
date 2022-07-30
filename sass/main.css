@@ -176,6 +176,7 @@ p {
 
 .navigation__link {
   padding-top: 32px;
+  cursor: pointer;
   display: block;
   color: #212121;
   font-family: 'Roboto';
@@ -429,6 +430,13 @@ p {
   margin-right: auto;
 }
 
+@media screen and (max-width: 1200px) {
+  .section-feature {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 .feature__ul {
   text-align: center;
   width: 100%;
@@ -611,6 +619,7 @@ p {
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 30px;
+  margin-top: 0;
 }
 
 @media screen and (min-width: 1200px) {
@@ -770,6 +779,7 @@ p {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+  margin-top: 0;
 }
 
 @media screen and (min-width: 1200px) {
@@ -799,9 +809,6 @@ p {
   display: -ms-flexbox;
   display: flex;
   width: 450px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   text-align: center;
   color: #AFB1B8;
   gap: 30px;
@@ -1592,7 +1599,6 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 40px;
   margin-bottom: 12px;
   margin-left: auto;
   margin-right: auto;
@@ -1621,7 +1627,6 @@ p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top: 40px;
     margin-bottom: 12px;
     margin-left: auto;
     margin-right: auto;
@@ -1993,14 +1998,14 @@ p {
   display: -ms-flexbox;
   display: flex;
   margin-right: auto;
-  width: 100%;
   gap: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .social-networks__li {
   padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
-  width: 100%;
 }
 
 .social-networks__link {
