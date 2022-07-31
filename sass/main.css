@@ -809,6 +809,9 @@ p {
   display: -ms-flexbox;
   display: flex;
   width: 450px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   color: #AFB1B8;
   gap: 30px;
@@ -819,6 +822,9 @@ p {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients__ul {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
     margin-top: 0;
     width: 768px;
     -ms-flex-wrap: wrap;
